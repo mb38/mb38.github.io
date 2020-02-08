@@ -36,7 +36,8 @@
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     list-style-type: none;
-  }
+    text-decoration: none;
+}
 
 .header_main {
     position: relative;
@@ -101,6 +102,11 @@
     color: #FFFFFF;
 }
 
+.container__menu_link--1:hover {
+    border-bottom: 4px solid #FFCB05;
+    padding-bottom: 22px;
+}
+
 .container__menu_link--2 {
     position: absolute;
     width: 160px;
@@ -113,6 +119,11 @@
     text-transform: uppercase;
     text-align: center;
     color: #FFFFFF;
+}
+
+.container__menu_link--2:hover {
+    border-bottom: 4px solid #FFCB05;
+    padding-bottom: 22px;
 }
 
 .container__menu_link--3 {
@@ -129,6 +140,10 @@
     color: #FFFFFF;
 }
 
+.container__menu_link--3:hover {
+    border-bottom: 4px solid #FFCB05;
+    padding-bottom: 22px;
+}
 
 .container__menu_phone--1 {
     position: absolute;
@@ -141,6 +156,11 @@
     line-height: 25px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.container__menu_phone--1:hover {
+    border-bottom: 4px solid #FFCB05;
+    padding-bottom: 22px;
 }
 
 .container__menu_phone--2 {
@@ -156,14 +176,16 @@
     color: #FFFFFF;
 }
 
-a:hover {
+.container__menu_phone--2:hover {
     border-bottom: 4px solid #FFCB05;
     padding-bottom: 22px;
 }
 
 
+
 .promo {
     height: 1080px;
+    width: 1920px;
     background: url('../img/bg_promo.png') center center/cover no-repeat;
 }
 
@@ -223,6 +245,11 @@ a:hover {
     color: #5C6266;
 }
 
+.container__menu_link--1_black:hover {
+    border-bottom: 4px solid #FFCB05;
+    padding-bottom: 22px;
+}
+
 .container__menu_link--2_black {
     position: absolute;
     width: 160px;
@@ -235,6 +262,11 @@ a:hover {
     text-transform: uppercase;
     text-align: center;
     color: #5C6266;
+}
+
+.container__menu_link--2_black:hover {
+    border-bottom: 4px solid #FFCB05;
+    padding-bottom: 22px;
 }
 
 .container__menu_link--3_black {
@@ -251,6 +283,11 @@ a:hover {
     color: #5C6266;
 }
 
+.container__menu_link--3_black:hover {
+    border-bottom: 4px solid #FFCB05;
+    padding-bottom: 22px;
+}
+
 .container__menu_phone--1_black {
     position: absolute;
     width: 182px;
@@ -264,6 +301,11 @@ a:hover {
     color: #5C6266;
 }
 
+.container__menu_phone--1_black:hover {
+    border-bottom: 4px solid #FFCB05;
+    padding-bottom: 22px;
+}
+
 .container__menu_phone--2_black {
     position: absolute;
     width: 182px;
@@ -275,6 +317,11 @@ a:hover {
     line-height: 25px;
     text-align: center;
     color: #5C6266;
+}
+
+.container__menu_phone--2_black:hover {
+    border-bottom: 4px solid #FFCB05;
+    padding-bottom: 22px;
 }
 
 .container__about-us {
@@ -311,4 +358,125 @@ a:hover {
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
+}
+
+.container__products-1 {
+    position: absolute;
+    width: 642px;
+    height: 760px;
+    left: 0px;
+    top: 1624px;
+    background: #000000;
+}
+
+.container__products-1_img-1 {
+    width: 1174px;
+    height: 430px;
+    padding-left: 210px;
+}
+
+.container__products-1_title {
+    position: absolute;
+    width: 400px;
+    height: 43px;
+    left: 61px;
+    top: 60px;
+    font-family: 'Gotham Pro';
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.container__products-1_item {
+    position: absolute;
+    width: 320px;
+    height: 110px;
+    left: 91px;
+    top: 152px;
+}
+
+.container__products-1_text {
+    font-size: 12px;
+    line-height: 180%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 43px;
+}
+
+.container__products-1_text:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.container__products-1_yellow-line {
+    position: absolute;
+    width: 420px;
+    height: 2px;
+    left: 0px;
+    top: 684px;
+    background: #FFCB05;
+}
+
+.container__products-1-learn {
+    position: absolute;
+    width: 108px;
+    height: 15px;
+    left: 60px;
+    top: 714px;
+}
+
+.container__products-1-learn_link {
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.container__products-2 {
+    position: absolute;
+    width: 642px;
+    height: 760px;
+    left: 640px;
+    top: 1624px;
+    background: #000000;
+}
+
+.container__products-2_img-2 {
+    padding-left: 235px;
+}
+
+.container__products-2_title {
+    position: absolute;
+    width: 360px;
+    height: 43px;
+    left: 75px;
+    top: 60px;
+    font-family: 'Gotham Pro';
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.container__products-3 {
+    position: absolute;
+    width: 638px;
+    height: 760px;
+    left: 1282px;
+    top: 1624px;
+    background: #000000;
+}
+
+.container__products-3_title {
+    position: absolute;
+    width: 320px;
+    height: 129px;
+    left: 47px;
+    top: 60px;
+    font-family: 'Gotham Pro';
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 120%;
+    color: #FFFFFF;
 }
