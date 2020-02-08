@@ -468,6 +468,10 @@
     background: #000000;
 }
 
+.container__products-3_img-3 {
+    height: 760px;
+}
+
 .container__products-3_title {
     position: absolute;
     width: 320px;
