@@ -223,6 +223,42 @@
     color: #FFFFFF;
 }
 
+.promo__container_line-1 {
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    left: 1786px;
+    top: 505px;
+    background: #FFCB05;
+}
+
+.promo__container_line-2 {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    left: 1826px;
+    top: 529px;
+    background: #FFFFFF;
+}
+
+.promo__container_line-3 {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    left: 1826px;
+    top: 551px;
+    background: #FFFFFF;
+}
+
+.promo__container_line-4 {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    left: 1826px;
+    top: 573px;
+    background: #FFFFFF;
+}
+
 .header_about-us {
     position: absolute;
     width: 1920px;
