@@ -7,24 +7,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header_absolute">
         <div class="container">
-            <nav class="container_menu">
+            <nav class="container__menu">
                 <div class="container__hamburger">
-                    <span></span>
+                    <div class="hamburger__line hamburger__line-top"></div>
+                    <div class="hamburger__line hamburger__line-middle"></div>
+                    <div class="hamburger__line hamburger__line-bottom"></div>
                 </div>
                 <div class="container__logo">
                     <a href="#"><img src="icons/logo.svg" alt="logo"></a>
                 </div>
-                <ul>
-                    <li><a href="#" class="container__menu-1">About us</a></li>
-                    <li><a href="#" class="container__menu-2">Products & Services</a></li>
-                    <li><a href="#" class="container__menu-3">Contacts</a></li>
-                </ul>
-                <ul>
-                    <li><a href="tel:8325591608" class="container__phone-1">Houston Ph: <span class="container__phone-1_span">832-559-1608</span></a></li>
-                    <li><a href="tel:4327891080" class="container__phone-2">Midland Ph: <span class="container__phone-2_span">432-789-1080</span></a></li>
-                </ul>
+                <div class="container__menu container__menu_nav">
+                    <div class="container__menu_item"><a href="#" class="container__menu_item-link">About us</a></div>
+                    <div class="container__menu_item"><a href="#" class="container__menu_item-link">Products & Services</a></div>
+                    <div class="container__menu_item"><a href="#" class="container__menu_item-link">Contacts</a></div>
+                </div>
+                <div class="container__menu_phone"><a href="tel:8325591608" class="container__menu_phone-link">Houston Ph: <span class="container__menu_phone_span">832-559-1608</span></a></div>
+                <div class="container__menu_phone"><a href="tel:4327891080" class="container__menu_phone-link">Midland Ph: <span class="container__menu_phone_span">432-789-1080</span></a></div>
             </nav>
         </div>
     </header>
@@ -43,29 +43,33 @@
                 <span class="promo__container_line-3"></span>
                 <span class="promo__container_line-4"></span>
             </div>
+            <div class="promo__container_ring-1"></div>
+            <div class="promo__container_ring-2"></div>
+            <div class="promo__container_ring-3"></div>
+            <div class="promo__container_ring-4"></div>
         </div>
     </section>
-    <section>
+    <header class="header_absolute">
         <div class="container">
-            <nav class="container_menu">
+            <nav class="container__menu">
                 <div class="container__hamburger">
-                    <span></span>
+                    <div class="hamburger__line hamburger__line-top"></div>
+                    <div class="hamburger__line hamburger__line-middle"></div>
+                    <div class="hamburger__line hamburger__line-bottom"></div>
                 </div>
                 <div class="container__logo">
                     <a href="#"><img src="icons/logo_black.svg" alt="logo"></a>
                 </div>
-                <ul>
-                    <li><a href="#" class="container__menu-1 container__menu-1_grey">About us</a></li>
-                    <li><a href="#" class="container__menu-2 container__menu-2_grey">Products & Services</a></li>
-                    <li><a href="#" class="container__menu-3 container__menu-3_grey">Contacts</a></li>
-                </ul>
-                <ul>
-                    <li><a href="tel:8325591608" class="container__phone-1 container__phone-1_grey">Houston Ph: <span class="container__phone-1_span">832-559-1608</span></a></li>
-                    <li><a href="tel:4327891080" class="container__phone-2 container__phone-2_grey">Midland Ph: <span class="container__phone-2_span">432-789-1080</span></a></li>
-                </ul>
+                <div class="container__menu container__menu_nav">
+                    <div class="container__menu_item"><a href="#" class="container__menu_item-link container__menu_item-link_grey">About us</a></div>
+                    <div class="container__menu_item"><a href="#" class="container__menu_item-link container__menu_item-link_grey">Products & Services</a></div>
+                    <div class="container__menu_item"><a href="#" class="container__menu_item-link container__menu_item-link_grey">Contacts</a></div>
+                </div>
+                <div class="container__menu_phone"><a href="tel:8325591608" class="container__menu_phone-link container__menu_phone-link_grey">Houston Ph: <span class="container__menu_phone_span">832-559-1608</span></a></div>
+                <div class="container__menu_phone"><a href="tel:4327891080" class="container__menu_phone-link container__menu_phone-link_grey">Midland Ph: <span class="container__menu_phone_span">432-789-1080</span></a></div>
             </nav>
         </div>
-    </section> 
+    </header> 
     <section>
         <div class="container">
             <div class="container__about-us">
@@ -81,33 +85,30 @@
     </section>
     <section>
         <div class="container">
-            <div class="container__products-1">
-                <div class="container__products-1_img-1"><img src="img/tools_1.svg" alt="Tools"></div>
-                <h2 class="container__products-1_title">MWD/LWD Tools</h2>
-                <div>
-                    <span class="container__products-1_icon"></span>
-                    <span class="container__products-2_icon"></span>
-                    <span class="container__products-3_icon"></span>
-                </div>
-                <div class="container__products-1_item">
-                    <ul>
-                        <li><a href="#" class="container__products-1_text">Intelligent Pulser Gamma Module (iPGM)</a></li>
-                        <li><a href="#" class="container__products-1_text">Intelligent Directional Module (IDM)</a></li>
-                        <li><a href="#" class="container__products-1_text">Guide MWD Surface System</a></li>
-                    </ul>
-                </div>
-                <span class="container__products-1_yellow-line"></span>
-                <div class="container__products-1-learn">
-                    <a href="#" class="container__products-1-learn_link">Learn more<span class="container__products-1-learn_link_icon">></a>
-                </div>
-            </div>
-            <div class="container__products-2">
-                <div class="container__products-2_img-2"><img src="img/tools_2.svg" alt="Tools"></div>
-                <h2 class="container__products-2_title">Software Products</h2>
-            </div>
-            <div class="container__products-3">
-                <div class="container__products-3_img-3"><img src="img/tools_3.svg" alt="Tools"></div>
-                <h2 class="container__products-3_title">Complete MWD<br>Kits and Other<br>Products</h2>
+            <div class="container__products">
+                    <div class="container__products_block">
+                        <div class="container__products-1_img"><img src="img/tools_1.svg" alt="Tools"></div>
+                        <h2 class="container__products-1_title">MWD/LWD Tools</h2>
+                        <div class="container__products-1_item">
+                            <ul>
+                                <li><a href="#" class="container__products_text"><span class="container__products_text_line">-</span>Intelligent Pulser Gamma Module (iPGM)</a></li>
+                                <li><a href="#" class="container__products_text"><span class="container__products_text_line">-</span>Intelligent Directional Module (IDM)</a></li>
+                                <li><a href="#" class="container__products_text"><span class="container__products_text_line">-</span>Guide MWD Surface System</a></li>
+                            </ul>
+                        </div>
+                        <div class="container__products_yellow-line"></div>
+                        <div class="container__products-learn">
+                            <a href="#" class="container__products-1-learn_link">Learn more<span class="container__products-1-learn_link_icon">></a>
+                        </div>
+                    </div>
+                    <div class="container__products_block">
+                        <div class="container__products-2_img"><img src="img/tools_2.svg" alt="Tools"></div>
+                        <h2 class="container__products-2_title">Software Products</h2>
+                    </div>
+                    <div class="container__products_block">
+                        <div class="container__products-3_img"><img src="img/tools_3.svg" alt="Tools"></div>
+                        <h2 class="container__products-3_title">Complete MWD<br>Kits and Other<br>Products</h2>
+                    </div>
             </div>
         </div>
     </section>
