@@ -215,6 +215,7 @@
 }
 
 .promo__container_title {
+    border: 399px, 0 , 0, 160px;
     position: absolute;
     width: 1091px;
     height: 134px;
@@ -326,7 +327,7 @@
 
 .container__products-1 {
     position: absolute;
-    width: 642px;
+    width: 640px;
     height: 760px;
     left: 0px;
     top: 1624px;
@@ -455,7 +456,7 @@
 
 .container__products-3 {
     position: absolute;
-    width: 638px;
+    width: 640px;
     height: 760px;
     left: 1282px;
     top: 1624px;
