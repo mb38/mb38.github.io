@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontier</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <header class="header_absolute">
@@ -43,15 +44,16 @@
                 <span class="promo__container_line-3"></span>
                 <span class="promo__container_line-4"></span>
             </div>
-            <div class="promo__container_ring-1"></div>
-            <div class="promo__container_ring-2"></div>
-            <div class="promo__container_ring-3"></div>
-            <div class="promo__container_ring-4"></div>
+            
+            <div class="promo__container_circle-1 promo__container_circle-1_big"></div>
+            <div class="promo__container_circle-2 promo__container_circle-2_big"></div>
+            <div class="promo__container_circle-3 promo__container_circle-3_big"></div>
+            <div class="promo__container_circle-4 promo__container_circle-4_big"></div>        
         </div>
     </section>
     <header class="header_absolute">
         <div class="container">
-            <nav class="container__menu">
+            <nav class="container__menu container__menu_grey">
                 <div class="container__hamburger">
                     <div class="hamburger__line hamburger__line-top"></div>
                     <div class="hamburger__line hamburger__line-middle"></div>
@@ -73,13 +75,15 @@
     <section>
         <div class="container">
             <div class="container__about-us">
-                <img src="icons/about_us.svg" alt="about-us">
-            </div>
-            <div class="container__about-us-text">
-                Frontier MWD Systems provides customers with the option to rent, lease to own and/or purchase advanced<br>MWD/LWD kits backed by an industry-leading commitment to service and support.
-            </div>
-            <div class="container__about-us-learn">
-                <a href="#" class="container__about-us-learn_link">Learn more<span class="container__about-us-learn_link_icon">></span></a>
+                <div class="container__about-us_title">
+                    <img src="icons/about_us.svg" alt="about-us">
+                </div>
+                <div class="container__about-us-text">
+                    Frontier MWD Systems provides customers with the option to rent, lease to own and/or purchase advanced<br>MWD/LWD kits backed by an industry-leading commitment to service and support.
+                </div>
+                <div class="container__about-us-learn">
+                    <a href="#" class="container__about-us-learn_link">Learn more<span class="container__about-us-learn_link_icon">></span></a>
+                </div>
             </div>
         </div>
     </section>
@@ -112,9 +116,6 @@
             </div>
         </div>
     </section>
-    
-
-
-    
+    <script src="js/script.js"></script>
 </body>
 </html>

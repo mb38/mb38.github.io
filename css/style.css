@@ -44,6 +44,7 @@
 .header_absolute {
     position: absolute;
     width: 100%;
+    z-index: 10;
 }
 
 .container {
@@ -53,6 +54,10 @@
 .container__menu {
     display: flex;
     flex-wrap: wrap;
+}
+
+.container__menu_grey {
+    display: none;
 }
 .container__hamburger {
     margin-right: 22px;
@@ -140,8 +145,10 @@
 
 .promo {
     height: 1080px;
+    width: 1940px;
     background: url('../img/bg_promo.png') center center/cover no-repeat;
     background-color: #262626;
+    
 }
 
 .promo__container_title {
@@ -151,6 +158,7 @@
     height: 134px;
     left: 160px;
     top: 399px;
+    z-index: 1;
 }
 
 .promo__container_title_text {
@@ -170,6 +178,7 @@
     height: 103px;
     left: 160px;
     top: 573px;
+    z-index: 1;
 }
 
 .promo__container_descr {
@@ -215,12 +224,76 @@
     background: #FFFFFF;
 }
 
+/* Animate circle */
+.promo__container_circle-1 {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: 18px;
+    top: 319px;
+    opacity: 0.3;
+    border: 1px solid #FFCE35;
+    border-radius: 100%;
+    transition: 1s all 1s;
+}
+
+.promo__container_circle-1_big {
+    display: none;
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    left: 18px;
+    top: 319px;
+    opacity: 0.3;
+    border: 1px solid #FFCE35;
+    border-radius: 100%;
+}
+
+.promo__container_circle-2 {
+    position: absolute;
+    width: 604px;
+    height: 604px;
+    left: -104px;
+    top: 197px;
+    border: 1px solid #FFCE35;
+    border-radius: 100%;
+}
+
+.promo__container_circle-3 {
+    position: absolute;
+    width: 1786px;
+    height: 1786px;
+    left: -695px;
+    top: -394px;
+    border: 1px solid #FFCE35;
+    border-radius: 100%;
+
+}
+
+.promo__container_circle-4 {
+    position: absolute;
+    width: 2370px;
+    height: 2370px;
+    left: -987px;
+    top: -686px;
+    opacity: 0.5;
+    border: 1px solid #FFCE35;
+    border-radius: 100%;
+}
+
 .container__about-us {
+    position: relative;
+    height: 545px;
+    background-color: white;
+    z-index: 5;
+}
+
+.container__about-us_title {
     position: absolute;
     width: 480px;
     height: 50px;
     left: 160px;
-    top: 1204px;
+    top: 124px;
 }
 
 .container__about-us-text {
@@ -228,7 +301,7 @@
     width: 1280px;
     height: 110px;
     left: 320px;
-    top: 1296px;
+    top: 216px;
     font-size: 25px;
     line-height: 204.27%;
     color: #101010;
@@ -239,7 +312,7 @@
     width: 108px;
     height: 15px;
     left: 320px;
-    top: 1445px;
+    top: 365px;
 }
 
 .container__about-us-learn_link {
@@ -258,7 +331,6 @@
 .container__products {
     display: flex;
     justify-content: space-between;
-    margin-top: 544px;
 }
 
 .container__products_block {
