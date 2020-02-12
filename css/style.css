@@ -475,6 +475,8 @@
     position: absolute;
     top: 160px;
     left: 70px;
+    opacity: 0;
+    transform: translateY(100%);
 }
 
 .container__products_text {
@@ -495,6 +497,7 @@
     left: 0px;
     top: 684px;
     background: #FFCB05;
+    opacity: 0;
 }
 
 .container__products-learn {
@@ -503,6 +506,8 @@
     height: 15px;
     left: 60px;
     top: 714px;
+    opacity: 0;
+    transform: translateX(-100%);
 }
 
 .container__products-1-learn_link {
@@ -515,6 +520,20 @@
 
 .container__products-1-learn_link_icon {
     padding-left: 20px;
+}
+
+.container__products_block-1 {
+    width: 640px;
+    height: 760px;
+}
+
+.container__products_block-1:hover  .container__products-1_item,
+.container__products_block-1:hover  .container__products_yellow-line,
+.container__products_block-1:hover  .container__products-learn {
+    opacity: 1;
+    transition: 1s;
+    transform: translateX(0%);
+    transform: translateY(0%);
 }
 
 .container__products-2_img {
