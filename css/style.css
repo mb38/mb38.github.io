@@ -52,10 +52,12 @@
     top:0;
     width: 100%;
     background: white;
+    opacity: 1;
+    transition: 1s;
 }
 
 .header_hidden {
-    display: none;
+    opacity: 0;
 }
 
 .container {
