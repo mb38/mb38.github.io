@@ -47,6 +47,17 @@
     z-index: 10;
 }
 
+.header_fixed {
+    position: fixed;
+    top:0;
+    width: 100%;
+    background: white;
+}
+
+.header_hidden {
+    display: none;
+}
+
 .container {
     width: 1920px;
 }
@@ -56,9 +67,6 @@
     flex-wrap: wrap;
 }
 
-.container__menu_grey {
-    display: none;
-}
 .container__hamburger {
     margin-right: 22px;
     height: 80px;
