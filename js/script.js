@@ -1,13 +1,14 @@
-var $win = $(window),
-	$fixed = $(".header_fixed"),
-	limit = 1080;
+/* HEADER MENU */
+let win = $(window),
+    fixed = $(".header_fixed"),
+    limit = 1080;
 
 function tgl (state) {
-    $fixed.toggleClass("header_hidden", state);
+    fixed.toggleClass("header_hidden", state);
 }
 
-$win.on("scroll", function() {
-	var top = $win.scrollTop();
+win.on("scroll", function() {
+	let top = win.scrollTop();
     
     if (top < limit) {
         tgl(true);
@@ -16,6 +17,7 @@ $win.on("scroll", function() {
     }
 });
 
+/* Smooth transition menu */
 $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
