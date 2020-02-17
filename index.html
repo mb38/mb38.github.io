@@ -3,98 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontier</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Белоусов</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <header class="header_absolute">
-        <div class="container">
-            <nav id="menu" class="container__menu">
-                <div class="container__hamburger">
-                    <div class="hamburger__line hamburger__line-top"></div>
-                    <div class="hamburger__line hamburger__line-middle"></div>
-                    <div class="hamburger__line hamburger__line-bottom"></div>
+    <header class="header header__absolute">
+        <div id="menu" class="header__menu">
+            <div class="header__menu-item">
+                <div class="header__menu-btn">
+                    <div class="header__menu-hamburger">
+                        <div class="hamburger__line hamburger__line-top"></div>
+                        <div class="hamburger__line hamburger__line-center"></div>
+                        <div class="hamburger__line hamburger__line-bottom"></div>
+                    </div>
                 </div>
-                <div class="container__logo">
-                    <a href="#"><img src="icons/logo.svg" alt="logo"></a>
+                <div class="header__logo">
+                    <a href="#"><img class="logo" src="icons/logo.svg" alt=""></a>
                 </div>
-                <div class="container__menu container__menu_nav">
-                    <div class="container__menu_item"><a href="#about-us" class="container__menu_item-link">About us</a></div>
-                    <div class="container__menu_item"><a href="#products" class="container__menu_item-link">Products & Services</a></div>
-                    <div class="container__menu_item"><a href="#" class="container__menu_item-link">Contacts</a></div>
-                </div>
-                <div class="container__menu_phone"><a href="tel:8325591608" class="container__menu_phone-link">Houston Ph: <span class="container__menu_phone_span">832-559-1608</span></a></div>
-                <div class="container__menu_phone"><a href="tel:4327891080" class="container__menu_phone-link">Midland Ph: <span class="container__menu_phone_span">432-789-1080</span></a></div>
-            </nav>
+                <nav class="header__nav">
+                    <a class="nav__link" href="#about-us">About us</a>
+                    <a class="nav__link" href="#products">Products & Services</a>
+                    <a class="nav__link" href="#">Contacts</a>
+                </nav>
+            </div>
+            <div class="header__menu-item">
+                <a href="tel:8325591608" class="header__phone">Houston Ph:<span class="header__phone_span"> 832-559-1608</span></a>
+                <a href="tel:4327891080" class="header__phone">Midland Ph:<span class="header__phone_span"> 432-789-1080</span></a>
+            </div>
         </div>
     </header>
+
     <section class="promo">
-        <div class="container">
-            <div class="promo__container_title">
-                <h1 class="promo__container_title_text"><span class="promo__container_title_text_yellow">Frontier </span>MWD Systems</h1>
+        <div class="promo__container">
+            <div class="promo__bg">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="swiper__bg" src="img/bg_promo.png" alt="img">
+                                <div class="swiper-text_position">
+                                    <h1 class="swiper__title-h1"><span>Frontier</span> MWD Systems</h1>
+                                    <h2 class="swiper__descr">
+                                        Frontier MWD Systems, a subsidiary of NewTech Services Holding Limited,<br>
+                                        is one of the fastest growing and most reliable MWD rental and service companies in the US.
+                                    </h2>
+                                </div>
+                            <div class="promo__circle-1"></div>
+                            <div class="promo__circle-2"></div>
+                            <div class="promo__circle-3"></div>
+                            <div class="promo__circle-4"></div> 
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper__bg" src="img/bg_promo2.jpg" alt="img">
+                            <div class="swiper-text_position">
+                                <h2 class="swiper__title"><span>Исландия. Северное сияние</span></h2>
+                                <h2 class="swiper__descr">
+                                    <span>
+                                        Необычайный праздник красок на ночном небе Исландии<br>
+                                        можно наблюдать часами по нескольку дней подряд.
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper__bg" src="img/bg_promo3.jpg" alt="img">
+                            <div class="swiper-text_position">
+                                <h2 class="swiper__title"><span>Водопад Сельяландсфосс</span></h2>
+                                <h2 class="swiper__descr">
+                                    <span>
+                                        Этот уникальный водопад, расположенный на реке Сельяландса (Seljalandsá)<br>
+                                        Довольно скромный по высоте (около 60 м), он от этого не менее живописный.
+                                    </span>
+                                </h2>
+                            </div>
+                        </div> 
+                        <div class="swiper-slide">
+                            <img class="swiper__bg" src="img/bg_promo4.jpg" alt="img">
+                            <div class="swiper-text_position">
+                                <h2 class="swiper__title"><span>Ландманналаугар – цветные горы</span></h2>
+                                <h2 class="swiper__descr">
+                                    <span>
+                                        Это потрясающее место для фотографов с бесконечным разнообразием геологических образований,<br>
+                                        дымящимися горячими источниками и реками, застывшей лавой и разноцветными риолитовыми горами,<br>
+                                        которые меняют цвета в зависимости от освещения.
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination">
+                        <span class="swiper-pagination-bullet"></span>
+                    </div>   
+                </div>
+
             </div>
-            <div class="promo__container_descr">
-                Frontier MWD Systems, a subsidiary of NewTech Services Holding Limited,<br>
-                is one of the fastest growing and most reliable MWD rental and service companies in the US.
-            </div>
-            <div class="promo__container_line">
-                <span class="promo__container_line-1"></span>
-                <span class="promo__container_line-2"></span>
-                <span class="promo__container_line-3"></span>
-                <span class="promo__container_line-4"></span>
-            </div>
-            
-            <div class="promo__container_circle-1 promo__container_circle-1_big"></div>
-            <div class="promo__container_circle-2 promo__container_circle-2_big"></div>
-            <div class="promo__container_circle-3 promo__container_circle-3_big"></div>
-            <div class="promo__container_circle-4 promo__container_circle-4_big"></div>        
+
         </div>
     </section>
-    <header class="header_absolute header_fixed header_hidden">
-        <div class="container">
-            <nav class="container__menu container__menu_grey">
-                <div class="container__hamburger">
-                    <div class="hamburger__line hamburger__line-top"></div>
-                    <div class="hamburger__line hamburger__line-middle"></div>
-                    <div class="hamburger__line hamburger__line-bottom"></div>
+
+    <header class="header header_fixed header_hidden">
+        <div class="header__menu header__menu_grey">
+            <div id="menu" class="header__menu-item">
+                <div class="header__menu-btn">
+                    <div class="header__menu-hamburger">
+                        <div class="hamburger__line hamburger__line-top"></div>
+                        <div class="hamburger__line hamburger__line-center"></div>
+                        <div class="hamburger__line hamburger__line-bottom"></div>
+                    </div>
                 </div>
-                <div class="container__logo">
-                    <a href="#"><img src="icons/logo_black.svg" alt="logo"></a>
+                <div class="header__logo">
+                    <a href="#"><img class="logo" src="icons/logo_black.svg" alt="logo"></a>
                 </div>
-                <div class="container__menu container__menu_nav">
-                    <div class="container__menu_item"><a href="#about-us" class="container__menu_item-link container__menu_item-link_grey">About us</a></div>
-                    <div class="container__menu_item"><a href="#products" class="container__menu_item-link container__menu_item-link_grey">Products & Services</a></div>
-                    <div class="container__menu_item"><a href="#" class="container__menu_item-link container__menu_item-link_grey">Contacts</a></div>
-                </div>
-                <div class="container__menu_phone"><a href="tel:8325591608" class="container__menu_phone-link container__menu_phone-link_grey">Houston Ph: <span class="container__menu_phone_span">832-559-1608</span></a></div>
-                <div class="container__menu_phone"><a href="tel:4327891080" class="container__menu_phone-link container__menu_phone-link_grey">Midland Ph: <span class="container__menu_phone_span">432-789-1080</span></a></div>
-            </nav>
-        </div>
-    </header> 
-    <section>
-        <div class="container">
-            <div id="about-us" class="container__about-us">
-                <div class="container__about-us_title">
-                    <img src="icons/about_us.svg" alt="about-us">
-                </div>
-                <div class="container__about-us-text">
-                    Frontier MWD Systems provides customers with the option to rent, lease to own and/or purchase advanced<br>MWD/LWD kits backed by an industry-leading commitment to service and support.
-                </div>
-                <div class="container__about-us-learn">
-                    <a href="#" class="container__about-us-learn_link">Learn more<span class="container__about-us-learn_link_icon">></span></a>
-                </div>
+                <nav class="header__nav">
+                    <a class="nav__link" href="#">About us</a>
+                    <a class="nav__link" href="#">Products & Services</a>
+                    <a class="nav__link" href="#">Contacts</a>
+                </nav>
+            </div>
+            <div class="header__menu-item">
+                <div class="header__phone">Houston Ph:<span class="header__phone_span"> 832-559-1608</span></div>
+                <div class="header__phone">Midland Ph:<span class="header__phone_span"> 432-789-1080</span></div>
             </div>
         </div>
+    </header>
+
+    <section id="about-us" class="about-us">
+            <div class="about-us__title">
+                <h3>About us</h3>
+            </div>
+            <div class="about-us__text">
+                Frontier MWD Systems provides customers with the option to rent, lease to own and/or purchase advanced<br>
+                MWD/LWD kits backed by an industry-leading commitment to service and support.
+            </div>
+            <div class="about-us__learn">
+                <a href="#" class="about-us__learn_link">Learn more<span class="about-us__learn_link_icon">></span></a>
+            </div>
     </section>
+
     <section>
-        <div class="container">
+        <div class="container-products">
             <div id="products" class="container__products">
                     <div class="container__products_block">
                         <div class="container__products_block-1">
-                            <div class="container__products-1_img"><img src="img/tools_1.svg" alt="Tools"></div>
-                            <h2 class="container__products-1_title">MWD/LWD Tools</h2>
-                            <div class="container__products-1_item">
+                            <div class="container__products_img"><img src="img/tools_1.svg" alt="Tools"></div>
+                            <h2 class="container__products_title">MWD/LWD Tools</h2>
+                            <div class="container__products_item">
                                 <ul>
                                     <li><a href="#" class="container__products_text"><span class="container__products_text_line">-</span>Intelligent Pulser Gamma Module (iPGM)</a></li>
                                     <li><a href="#" class="container__products_text"><span class="container__products_text_line">-</span>Intelligent Directional Module (IDM)</a></li>
@@ -103,21 +159,127 @@
                             </div>
                             <div class="container__products_yellow-line"></div>
                             <div class="container__products-learn">
-                                <a href="#" class="container__products-1-learn_link">Learn more<span class="container__products-1-learn_link_icon">></a>
+                                <a href="#" class="container__products-learn_link">Learn more<span class="container__products-learn_link_icon">></a>
                             </div>
                         </div>
                     </div>
                     <div class="container__products_block">
-                        <div class="container__products-2_img"><img src="img/tools_2.svg" alt="Tools"></div>
-                        <h2 class="container__products-2_title">Software Products</h2>
+                        <div class="container__products_img"><img src="img/tools_2.svg" alt="Tools"></div>
+                        <h2 class="container__products_title">Software Products</h2>
+                        <div class="container__products_item">
+                            <ul>
+                                <li><a href="#" class="container__products_text"><span class="container__products_text_line">-</span>Intelligent Pulser Gamma Module (iPGM)</a></li>
+                                <li><a href="#" class="container__products_text"><span class="container__products_text_line">-</span>Intelligent Directional Module (IDM)</a></li>
+                                <li><a href="#" class="container__products_text"><span class="container__products_text_line">-</span>Guide MWD Surface System</a></li>
+                            </ul>
+                        </div>
+                        <div class="container__products_yellow-line"></div>
+                            <div class="container__products-learn">
+                                <a href="#" class="container__products-learn_link">Learn more<span class="container__products-learn_link_icon">></a>
+                            </div>
                     </div>
                     <div class="container__products_block">
-                        <div class="container__products-3_img"><img src="img/tools_3.svg" alt="Tools"></div>
-                        <h2 class="container__products-3_title">Complete MWD<br>Kits and Other<br>Products</h2>
+                        <div class="container__products_img"><img src="img/tools_3.svg" alt="Tools"></div>
+                        <h2 class="container__products_title">Complete MWD<br>Kits and Other<br>Products</h2>
+                        <div class="container__products_item">
+                            <ul>
+                                <li><a href="#" class="container__products_text"><span class="container__products_text_line">-</span>Intelligent Pulser Gamma Module (iPGM)</a></li>
+                                <li><a href="#" class="container__products_text"><span class="container__products_text_line">-</span>Intelligent Directional Module (IDM)</a></li>
+                                <li><a href="#" class="container__products_text"><span class="container__products_text_line">-</span>Guide MWD Surface System</a></li>
+                            </ul>
+                        </div>
+                        <div class="container__products_yellow-line"></div>
+                            <div class="container__products-learn">
+                                <a href="#" class="container__products-learn_link">Learn more<span class="container__products-learn_link_icon">></a>
+                            </div>
                     </div>
             </div>
         </div>
     </section>
+    <section class="require">
+            <img class="require__bg" src="img/require__bg.svg" alt="img">
+            <div class="require__line"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="container__require_top">
+                            <h2 class="container__require_top_title">NewTech Services Holding Limited</h2>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="container__require_top">
+                            <div class="container__require_top_descr">
+                                NewTech Services Holding Limited is an international 
+                                oilfield services company founded in 2009. 
+                                NewTech Services supplies high technology products 
+                                and services to the oil and gas exploration and 
+                                production industry.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="container__require_bot">
+                            <div class="container__require_bot_block">
+                                <p class="container__require_bot_num">9</p>
+                                <p class="container__require_bot_text">Manufacturing Facilities Worldwide</p>
+                            </div>
+                            <div class="container__require_bot_block">
+                                <p class="container__require_bot_num">12</p>
+                                <p class="container__require_bot_text">Servives & Maintenance Centers Worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="container__require_bot">
+                            <p class="container__require_bot_num-big">27</p>
+                            <p class="container__require_bot_num-big">13</p>
+                            <p class="container__require_bot_text">Regional Offices Worldwide</p>
+                            <p class="container__require_bot_text">Regional Offices in Russia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>         
+    </section>
+    <section class="map">
+    </section>
+
+    <section class="news">
+        <div class="news_title">Новости</div>
+        <h3>Slider5 is visible when you slide to 2,3, or 4, and slider5 has "swiper-slide-visible" className</h3> <br>
+
+        <div class="swiper-container-2" id="swiper-container2" width="600px">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide-2 active-slider-2">
+                    slider1</div>
+                <div class="swiper-slide-2" style="background: #8acc7d;">
+                    slider2</div>
+                <div class="swiper-slide-2" style="background: #b7cc7d;">
+                    slider3</div>
+                <div class="swiper-slide-2" style="background: #9eb75c;">
+                    slider4</div>
+                <div class="swiper-slide-2" style="background: #7da8cc;">
+                    slider5</div>
+                <div class="swiper-slide-2" style="background: #9f7dcc;">
+                    slider6</div>
+                <div class="swiper-slide-2" style="background: #96cc7d;">
+                    slider7</div>
+                <div class="swiper-slide-2" style="background: #cc7dae;">
+                    slider8</div>
+            
+            </div>
+        </div>
+
+
+    </section>
+
+
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
