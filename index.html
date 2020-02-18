@@ -271,7 +271,59 @@
         </div> -->
 
     </section>
-    <section class="map">
+    <section class="feedback">
+        <form class="feedback__form">
+            <div class="container">
+                <h2 class="feedback__form_title">Request More Information</h2>
+                <div class="form-row">
+                    <div class="feedback__form_item col-12 form-group">
+                        <label for="formGroupExampleInput">Name</label>
+                        <input type="text" class="feedback__form_item_style" id="formGroupExampleInput" placeholder="Enter name">
+                    </div>
+                    <div class="feedback__form_item col-6 mb-6 form-group">
+                        <label for="formGroupExampleInput">Company</label>
+                        <input type="text" class="feedback__form_item_style" id="formGroupExampleInput" placeholder="Enter company name">
+                    </div>
+                    <div class="feedback__form_item col-6 mb-6 form-group">
+                    <label for="exampleFormControlSelect1">Select business segment</label>
+                    <select class="feedback__form_item_style_business" id="exampleFormControlSelect1">
+                        <option selected disabled value="">Business Segment</option>
+                        <option>Business 1</option>
+                        <option>Business 2</option>
+                        <option>Business 3</option>
+                        <option>Business 4</option>
+                        <option>Business 5</option>
+                    </select>
+                    </div>
+                    <div class="feedback__form_item col-6 mb-6 form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="feedback__form_item_style" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="feedback__form_item col-6 mb-6 form-group">
+                        <label for="validationServerUsername">Phone number</label>
+                        <div class="input-group">
+                        <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required>
+                        <div class="invalid-feedback">
+                            Это поле обязательно для заполнения
+                        </div>
+                        </div>
+                    </div>
+                    <div class="feedback__form_item_comment col-12 form-group">
+                        <label for="formGroupExampleInput"></label>
+                        <input type="text" class="feedback__form_item_style_comment" id="formGroupExampleInput" placeholder="Comment">
+                    </div>
+                    <div class="feedback__form_item_check col-6 mb-6 form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="feedback__form_item_check_input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">I give consent for my personal data to be processed</label>
+                        </div>
+                    </div>
+                    <div class="feedback__form_item_btn col-6 mb-6 form-group">
+                        <button type="submit" class="btn feedback__form_item_btn_button">Send</button>
+                    </div>
+                </div> 
+            </div>
+        </form>
     </section>
 
    
