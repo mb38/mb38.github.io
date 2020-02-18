@@ -656,6 +656,17 @@
 .map {
   height: 780px;
   background-color: #1F1F1F;
+  position: relative;
+}
+
+.world-map {
+  color: #fff;
+  font-size: 5vh;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .news {
@@ -663,7 +674,15 @@
   height: 100%;
   height: 1130px;
 }
-
+.news_title {
+  font-size: 5vh;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 
 /* FORM */
@@ -779,6 +798,103 @@
     }
   }
 }
+
+/* FOOTER */
+.footer {
+  height: 880px;
+  width: 100%;
+  background: #1F1F1F;
+  color: #fff;
+}
+
+.footer__container {
+  &_title {
+    margin-top: 120px;
+    font-size: 72px;
+    line-height: 140%;
+    font-weight: bold;
+    span {
+      color: #FFCB05; 
+    }
+  }
+  &_contacts {
+    margin-top: 100px;
+    font-size: 18px;
+    line-height: 37px;
+    &_sity {
+      font-weight: bold;
+    }
+    &_address {
+      margin-top: 60px;
+    }
+    &_phone {
+      margin-top: 30px;
+    }
+  }
+  &_menu {
+    margin-top: 120px;
+    margin-left: 1vw;
+    position: relative;
+    &_line {
+      position: absolute;
+      width: 1px;
+      height: 210px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background: #FFFFFF;
+    }
+    &_item {
+      margin-top: 38px;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      transition: 0.5s;
+      &:hover {
+        text-decoration: none;
+        color: #FFCB05; 
+      }
+    }
+  }
+  &_copy {
+    margin-top: 75px;
+  }
+  &_linkedin {
+    display: block;
+    margin-top: 75px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 160%;
+    color: #FFFFFF;
+    span {
+      margin-left: 20px;
+    }
+    &:hover {
+      text-decoration: none;
+      color: #FFCB05; 
+    }
+  }
+  &_only {
+    display: block;
+    margin-top: 75px;
+    font-size: 14px;
+    line-height: 32px;
+    color: #FFFFFF;
+    span {
+      font-weight: bold;
+    }
+    &:hover {
+      text-decoration: none;
+      color: #FFCB05; 
+    }
+  }
+}
+
+
 
 
 
