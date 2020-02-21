@@ -39,9 +39,9 @@
     <section class="promo">
         <div class="promo__container">
             <div class="promo__container_bg">
-                <div class="swiper-container">
+                <div class="swiper-container promo__container_swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide promo__container_swiper-slide">
                             <img class="promo__container_img" src="img/bg_promo.png" alt="img">
                                 <div class="promo__container_text-position">
                                     <h1 class="promo__container_title-h1"><span>Frontier</span> MWD Systems</h1>
@@ -55,7 +55,7 @@
                             <div class="promo__circle-3"></div>
                             <div class="promo__circle-4"></div> 
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide promo__container_swiper-slide">
                             <img class="promo__container_img" src="img/bg_promo2.jpg" alt="img">
                             <div class="promo__container_text-position">
                                 <h2 class="promo__container_title"><span>Исландия. Северное сияние</span></h2>
@@ -67,7 +67,7 @@
                                 </h2>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide promo__container_swiper-slide">
                             <img class="promo__container_img" src="img/bg_promo3.jpg" alt="img">
                             <div class="promo__container_text-position">
                                 <h2 class="promo__container_title"><span>Водопад Сельяландсфосс</span></h2>
@@ -79,7 +79,7 @@
                                 </h2>
                             </div>
                         </div> 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide promo__container_swiper-slide">
                             <img class="promo__container_img" src="img/bg_promo4.jpg" alt="img">
                             <div class="promo__container_text-position">
                                 <h2 class="promo__container_title"><span>Ландманналаугар – цветные горы</span></h2>
@@ -196,6 +196,7 @@
             </div>
         </div>
     </section>
+
     <section class="require">
             <img class="require__bg" src="img/require__bg.svg" alt="img">
             <div class="require__line"></div>
@@ -242,52 +243,110 @@
                 </div>
             </div>         
     </section>
-    <section class="map">
-        <div class="world-map">WORLD MAP</div>
+
+    <section class="maps" id="maps">
+        <img class="maps__img" src="img/maps.svg" alt="maps">
+        <div class="maps__line"></div>
+        <div class="container maps__container">
+            <div class="row">
+                <div class="col-6 offset-6">
+                    <div class="maps__container_country">
+                        <p class="maps__container_country_world">World</p>
+                        <p class="maps__container_country_russia">Russia</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h2 class="maps__container_title">International<br><span>sales</span></h2>
+                    <a href="#" class="maps__container_learn">Learn more<span class="container__products-learn_link_icon">></a>
+                </div>
+                <div class="col-6">
+                    <div class="maps__container_subtitle">Need Help with Shipping?</div>
+                    <div class="maps__container_descr">We offer several logistics options for international<br>shipping, and can help make sure that your kit arrives in<br>the right place at the right time.</div>
+                </div>
+            </div>
+        </div>   
     </section>
 
     <section class="news">
-        <div class="news_title"><div>Swiper</div><img src="img/Homerfacepalm.jpg"></div>
-        
-        <!-- <h3>Slider5 is visible when you slide to 2,3, or 4, and slider5 has "swiper-slide-visible" className</h3> <br>
-
-        <div class="swiper-container" id="swiper-container2" style="width:800px;">
+        <h3 class="news__title">Новости</h3> <br>
+        <div class="swiper-container news__container_swiper" >
             <div class="swiper-wrapper">
-                <div class="swiper-slide active-slider">
-                    slider1</div>
-                <div class="swiper-slide" style="background: #8acc7d;">
-                    slider2</div>
-                <div class="swiper-slide" style="background: #b7cc7d;">
-                    slider3</div>
-                <div class="swiper-slide" style="background: #9eb75c;">
-                    slider4</div>
-                <div class="swiper-slide" style="background: #7da8cc;">
-                    slider5</div>
-                <div class="swiper-slide" style="background: #9f7dcc;">
-                    slider6</div>
-                <div class="swiper-slide" style="background: #96cc7d;">
-                    slider7</div>
-                <div class="swiper-slide" style="background: #cc7dae;">
-                    slider8</div>
+                <div class="swiper-slide active-slider news__container_swiper_slide">
+                    <div class="news__container_swiper_slide_data">18 апреля 2019</div>
+                    <div class="news__container_swiper_slide_item">
+                        <div class="news__container_swiper_slide_item_dark">
+                            <img src="img/news1.png" alt="" class="news__container_swiper_slide_item_dark_img">
+                        </div>
+                        <h2 class="news__container_swiper_slide_item_title">Команда НьюТек Сервисез по мини-футболу...</h2>
+                    </div>
+                    <div class="news__container_swiper_slide_descr">17 марта на крытом футбольном манеже «Олимп» в районе Новокосино состоялся очередной благотворительный турнир «Кубок Нефть и Газ ...</div>
+                </div>
+                <div class="swiper-slide active-slider news__container_swiper_slide">
+                    <div class="news__container_swiper_slide_data">11 марта 2019</div>
+                    <div class="news__container_swiper_slide_item">
+                        <div class="news__container_swiper_slide_item_dark">
+                            <img src="img/news2.png" alt="" class="news__container_swiper_slide_item_dark_img">
+                        </div>
+                        <div class="news__container_swiper_slide_item_title">В Минусинске успешно выполнены ...</div>
+                    </div>
+                    <div class="news__container_swiper_slide_descr">В апреле текущего года по договору между компаниями «НьюТек Сервисез» и «ГЕОТЕК Сейсморазведка», одной из крупнейших в мире...</div>
+                </div>
+                <div class="swiper-slide active-slider news__container_swiper_slide">
+                    <div class="news__container_swiper_slide_data">8 марта 2019</div>
+                    <div class="news__container_swiper_slide_item">
+                        <div class="news__container_swiper_slide_item_dark">
+                            <img src="img/news3.png" alt="" class="news__container_swiper_slide_item_dark_img">
+                        </div>
+                        <div class="news__container_swiper_slide_item_title"></div>
+                    </div>
+                    <div class="news__container_swiper_slide_descr">В апреле в Перми НьюТек Сервисез запустило один из первых заводов в России по производству набухающих пакеров – надежного, безопасного и</div>
+                </div>
+                <div class="swiper-slide active-slider news__container_swiper_slide">
+                    <div class="news__container_swiper_slide_data">18 апреля 2019</div>
+                    <div class="news__container_swiper_slide_item">
+                        <div class="news__container_swiper_slide_item_dark">
+                            <img src="img/news1.png" alt="" class="news__container_swiper_slide_item_dark_img">
+                        </div>
+                        <div class="news__container_swiper_slide_item_title">Команда НьюТек Сервисез по мини-футболу...</div>
+                    </div>
+                    <div class="news__container_swiper_slide_descr">17 марта на крытом футбольном манеже «Олимп» в районе Новокосино состоялся очередной благотворительный турнир «Кубок Нефть и Газ ...</div>
+                </div>
+                <div class="swiper-slide active-slider news__container_swiper_slide">
+                    <div class="news__container_swiper_slide_data">11 марта 2019</div>
+                    <div class="news__container_swiper_slide_item">
+                        <div class="news__container_swiper_slide_item_dark">
+                            <img src="img/news2.png" alt="" class="news__container_swiper_slide_item_dark_img">
+                        </div>
+                        <div class="news__container_swiper_slide_item_title">В Минусинске успешно выполнены ...</div>
+                    </div>
+                    <div class="news__container_swiper_slide_descr">В апреле текущего года по договору между компаниями «НьюТек Сервисез» и «ГЕОТЕК Сейсморазведка», одной из крупнейших в мире...</div>
+                </div>
+                <div class="swiper-slide active-slider news__container_swiper_slide">
+                    <div class="news__container_swiper_slide_data">8 марта 2019</div>
+                    <div class="news__container_swiper_slide_item">
+                        <div class="news__container_swiper_slide_item_dark">
+                            <img src="img/news3.png" alt="" class="news__container_swiper_slide_item_dark_img">
+                        </div>
+                        <div class="news__container_swiper_slide_item_title"></div>
+                    </div>
+                    <div class="news__container_swiper_slide_descr">В апреле в Перми НьюТек Сервисез запустило один из первых заводов в России по производству набухающих пакеров – надежного, безопасного и</div>
+                </div>
             </div>
-        </div> -->
-
+        </div>
     </section>
+
     <section class="feedback">
-        <form class="feedback__form">
+        <form class="feedback__form" novalidate>
             <div class="container">
                 <h2 class="feedback__form_title">Request More Information</h2>
                 <div class="form-row">
                     <div class="feedback__form_item col-12 form-group">
-                        <label for="formGroupExampleInput">Name</label>
-                        <input type="text" class="feedback__form_item_style" id="formGroupExampleInput" placeholder="Enter name">
+                        <input type="text" class="feedback__form_item_style" id="formGroupExampleInput" placeholder="Name">
                     </div>
                     <div class="feedback__form_item col-6 mb-6 form-group">
-                        <label for="formGroupExampleInput">Company</label>
-                        <input type="text" class="feedback__form_item_style" id="formGroupExampleInput" placeholder="Enter company name">
+                        <input type="text" class="feedback__form_item_style" id="formGroupExampleInput" placeholder="Company name">
                     </div>
                     <div class="feedback__form_item col-6 mb-6 form-group">
-                    <label for="exampleFormControlSelect1">Select business segment</label>
                     <select class="feedback__form_item_style_business" id="exampleFormControlSelect1">
                         <option selected disabled value="">Business Segment</option>
                         <option>Business 1</option>
@@ -297,21 +356,16 @@
                         <option>Business 5</option>
                     </select>
                     </div>
-                    <div class="feedback__form_item col-6 mb-6 form-group">
-                        <label for="exampleFormControlInput1">Email address</label>
-                        <input type="email" class="feedback__form_item_style" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <div class="feedback__form_item col-6 mb-6 form-group has-error">
+                        <input type="email" class="feedback__form_item_style" id="exampleFormControlInput1" placeholder="Email">
                     </div>
                     <div class="feedback__form_item col-6 mb-6 form-group">
-                        <label for="validationServerUsername">Phone number</label>
-                        <div class="input-group">
-                        <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required>
-                        <div class="invalid-feedback">
+                        <input type="number" class="feedback__form_item_style_phone" id="phone" aria-live="polite" placeholder="Phone" required>
+                        <div class="feedback__form_item_style_phone_invalid_text invalid-feedback">
                             Это поле обязательно для заполнения
-                        </div>
                         </div>
                     </div>
                     <div class="feedback__form_item_comment col-12 form-group">
-                        <label for="formGroupExampleInput"></label>
                         <input type="text" class="feedback__form_item_style_comment" id="formGroupExampleInput" placeholder="Comment">
                     </div>
                     <div class="feedback__form_item_check col-6 mb-6 form-group">
@@ -327,6 +381,7 @@
             </div>
         </form>
     </section>
+
     <section class="footer">
         <div class="container">
             <div class="row">
@@ -366,7 +421,7 @@
                     <p class="footer__container_copy">© Frontier MWD Systems LLC. 2019</p>
                 </div>
                 <div class="col-2 offset-5">
-                    <a href="#" class="footer__container_linkedin"><img src="icons/linkedin.svg"><span>LinkedIn</<span></a>
+                    <a href="#" class="footer__container_linkedin"><img src="icons/linkedin.svg"><span>LinkedIn</br></a>
                 </div>
                 <div class="col-2">
                     <a href="https://onlydigital.ru/" class="footer__container_only" target="_blank">Design by <span>Only</span></a>
@@ -375,8 +430,6 @@
         </div>
     </section>
 
-
-   
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>

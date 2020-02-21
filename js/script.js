@@ -31,20 +31,36 @@ $(document).ready(function(){
 });
 
 /* Swiper */
-var swiper = new Swiper('.swiper-container', {
+let swiper = new Swiper(document.querySelector('.promo__container_swiper'), {
     direction: 'vertical',
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
-  });
-/* _______________________________________ */
+});
+
 /* Swiper 2*/
-var mySwiper2 = new Swiper('#swiper-container2', {
+let mySwiper2 = new Swiper(document.querySelector('.news__container_swiper'), {
     watchSlidesProgress: true,
     watchSlidesVisibility: true,
-    slidesPerView: 3
+    slidesPerView: 2.7
+});
 
-})
+/* FORM PHONE */
+var form  = document.getElementsByTagName('form')[0];
+var phone = document.getElementById('phone');
+var error = document.querySelector('.feedback__form_item_style_phone_invalid_text');
 
-
+phone.addEventListener("input", function (event) {
+  if (phone.validity.valid) {
+    error.innerHTML = "";
+    error.className = "error";
+  }
+}, false);
+form.addEventListener("submit", function (event) {
+  if (!phone.validity.valid) {
+    error.innerHTML = "Это поле обязательно для заполнения";
+    error.className = "feedback__form_item_style_phone_invalid_text";
+    event.preventDefault();
+  }
+}, false);
