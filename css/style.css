@@ -861,6 +861,207 @@
           animation: show 2s;
 }
 
+.maps__mark {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: show 1.5s;
+          animation: show 1.5s;
+}
+
+.maps__mark_style {
+  width: 14px;
+  height: 14px;
+  background: #FFCE35;
+  opacity: 0.6;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.maps__mark_style span {
+  display: none;
+  width: 300px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 220%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.maps__mark_style:hover span {
+  display: block;
+  opacity: 1;
+}
+
+.maps__mark-usa_1 {
+  position: absolute;
+  left: 225px;
+  top: 410px;
+}
+
+.maps__mark-usa_1:hover {
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 203, 5, 0) 0%, rgba(255, 203, 5, 0.33) 100%);
+  opacity: 1;
+  border: 1px solid #FFCE35;
+  z-index: 12;
+}
+
+.maps__mark-usa_2 {
+  position: absolute;
+  left: 445px;
+  top: 440px;
+}
+
+.maps__mark-usa_2:hover {
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 203, 5, 0) 0%, rgba(255, 203, 5, 0.33) 100%);
+  opacity: 1;
+  border: 1px solid #FFCE35;
+  z-index: 12;
+}
+
+.maps__mark-brazil {
+  position: absolute;
+  left: 602px;
+  top: 668px;
+}
+
+.maps__mark-brazil:hover {
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 203, 5, 0) 0%, rgba(255, 203, 5, 0.33) 100%);
+  opacity: 1;
+  border: 1px solid #FFCE35;
+  z-index: 12;
+}
+
+.maps__mark-brazil {
+  position: absolute;
+  left: 602px;
+  top: 668px;
+}
+
+.maps__mark-brazil:hover {
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 203, 5, 0) 0%, rgba(255, 203, 5, 0.33) 100%);
+  opacity: 1;
+  border: 1px solid #FFCE35;
+  z-index: 12;
+}
+
+.maps__mark-france {
+  position: absolute;
+  left: 904px;
+  top: 335px;
+}
+
+.maps__mark-france:hover {
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 203, 5, 0) 0%, rgba(255, 203, 5, 0.33) 100%);
+  opacity: 1;
+  border: 1px solid #FFCE35;
+  z-index: 12;
+}
+
+.maps__mark-saudi-arabia {
+  position: absolute;
+  left: 1116px;
+  top: 469px;
+}
+
+.maps__mark-saudi-arabia:hover {
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 203, 5, 0) 0%, rgba(255, 203, 5, 0.33) 100%);
+  opacity: 1;
+  border: 1px solid #FFCE35;
+  z-index: 12;
+}
+
+.maps__mark-russia_1 {
+  position: absolute;
+  left: 1195px;
+  top: 255px;
+}
+
+.maps__mark-russia_1:hover {
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 203, 5, 0) 0%, rgba(255, 203, 5, 0.33) 100%);
+  opacity: 1;
+  border: 1px solid #FFCE35;
+  z-index: 12;
+}
+
+.maps__mark-russia_2 {
+  position: absolute;
+  left: 1210px;
+  top: 220px;
+}
+
+.maps__mark-russia_2:hover {
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 203, 5, 0) 0%, rgba(255, 203, 5, 0.33) 100%);
+  opacity: 1;
+  border: 1px solid #FFCE35;
+  z-index: 12;
+}
+
+.maps__mark-russia_3 {
+  position: absolute;
+  left: 1422px;
+  top: 246px;
+}
+
+.maps__mark-russia_3:hover {
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 203, 5, 0) 0%, rgba(255, 203, 5, 0.33) 100%);
+  opacity: 1;
+  border: 1px solid #FFCE35;
+  z-index: 12;
+}
+
+.maps__mark-russia_4 {
+  position: absolute;
+  left: 1532px;
+  top: 151px;
+}
+
+.maps__mark-russia_4:hover {
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 203, 5, 0) 0%, rgba(255, 203, 5, 0.33) 100%);
+  opacity: 1;
+  border: 1px solid #FFCE35;
+  z-index: 12;
+}
+
+.maps__mark-russia_5 {
+  position: absolute;
+  left: 1566px;
+  top: 184px;
+}
+
+.maps__mark-russia_5:hover {
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 203, 5, 0) 0%, rgba(255, 203, 5, 0.33) 100%);
+  opacity: 1;
+  border: 1px solid #FFCE35;
+  z-index: 12;
+}
+
 .maps__yandex {
   display: none;
   position: absolute;
@@ -995,6 +1196,24 @@
   text-decoration: none;
   color: #fff;
   border-bottom: 2px solid #fff;
+}
+
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes zoomIn {
@@ -1385,6 +1604,8 @@
   text-transform: uppercase;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .feedback__form_item_btn_button:hover {
@@ -1392,8 +1613,22 @@
   background: #000000;
 }
 
+.btn:focus, .btn.focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .custom-checkbox .feedback__form_item_check_input:checked ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e");
+}
+
+.status {
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 140%;
+  text-align: center;
+  -webkit-animation: zoomIn 1.5s;
+          animation: zoomIn 1.5s;
 }
 
 /* FOOTER */

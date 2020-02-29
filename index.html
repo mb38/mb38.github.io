@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Белоусов</title>
+    <script src="https://api-maps.yandex.ru/2.1/?load=Geolink&amp;lang=ru_RU&amp;apikey=<f9631021-35f0-4876-b831-e6dca08d0d83>" type="text/javascript"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -220,6 +221,19 @@
     <section class="maps" id="maps">
         <img class="maps__img" src="img/maps.svg" alt="maps">
         <div class="maps__line"></div>
+        <div class="maps__mark">
+            <div class="maps__mark_style maps__mark-usa_1"><span class="ymaps-geolink" data-bounds="[[55.63333783240489,37.486741441564136],
+                [55.75433517114847,37.69017466910319]]">5125 Hiltonview Rd Houston</span></div>
+            <div class="maps__mark_style maps__mark-usa_2"><span class="ymaps-geolink" data-bounds="[40.85820238123578,-74.13305109842264]">2206 W. New Jersey Ave.Midland</span></div>
+            <div class="maps__mark_style maps__mark-brazil"><span class="ymaps-geolink" data-bounds="[-3.185479622386281,-52.19926279653706]">Altamira</span></div>
+            <div class="maps__mark_style maps__mark-france"><span class="ymaps-geolink" data-bounds="[48.8515676366447,2.3448104020995837]">Paris</span></div>
+            <div class="maps__mark_style maps__mark-saudi-arabia"><span class="ymaps-geolink" data-bounds="[27.522374900246433,41.690270819043285]">Hail</span></div>
+            <div class="maps__mark_style maps__mark-russia_1"><span class="ymaps-geolink" data-bounds="[55.796908551478175,49.107276664062454]">Kazan</span></div>
+            <div class="maps__mark_style maps__mark-russia_2"><span class="ymaps-geolink" data-bounds="[58.009623989285544,56.2369736005858]">Perm</span></div>
+            <div class="maps__mark_style maps__mark-russia_3"><span class="ymaps-geolink" data-bounds="[56.01332762682706,92.87064982519519]">Красноярск</span></div>
+            <div class="maps__mark_style maps__mark-russia_4"><span class="ymaps-geolink" data-bounds="[[65.92624829984673,111.45060211114362],[65.95710926092153,111.5604653923936]]">"Айхал, ул. Промышленная"</span></div>
+            <div class="maps__mark_style maps__mark-russia_5"><span class="ymaps-geolink" data-bounds="[[63.73467135456489,121.57555058972159],[63.768158232863186,121.68541387097162]]">Вилюйск</span></div>
+        </div>
         <div id="maps__yandex" class="maps__yandex"></div>
         <div class="container">
             <div class="row">
@@ -285,7 +299,7 @@
                         <div class="news__container_swiper_slide_item_dark">
                             <img src="img/news1.png" alt="" class="news__container_swiper_slide_item_dark_img">
                         </div>
-                        <div class="news__container_swiper_slide_item_title">Команда НьюТек Сервисез по мини-футболу...</div>
+                        <div class="news__container_swiper_slide_item_title">Новость 4</div>
                     </div>
                     <div class="news__container_swiper_slide_descr">17 марта на крытом футбольном манеже «Олимп» в районе Новокосино состоялся очередной благотворительный турнир «Кубок Нефть и Газ ...</div>
                 </div>
@@ -295,7 +309,7 @@
                         <div class="news__container_swiper_slide_item_dark">
                             <img src="img/news2.png" alt="" class="news__container_swiper_slide_item_dark_img">
                         </div>
-                        <div class="news__container_swiper_slide_item_title">В Минусинске успешно выполнены ...</div>
+                        <div class="news__container_swiper_slide_item_title">Новость 5</div>
                     </div>
                     <div class="news__container_swiper_slide_descr">В апреле текущего года по договору между компаниями «НьюТек Сервисез» и «ГЕОТЕК Сейсморазведка», одной из крупнейших в мире...</div>
                 </div>
@@ -305,7 +319,7 @@
                         <div class="news__container_swiper_slide_item_dark">
                             <img src="img/news3.png" alt="" class="news__container_swiper_slide_item_dark_img">
                         </div>
-                        <div class="news__container_swiper_slide_item_title"></div>
+                        <div class="news__container_swiper_slide_item_title">Новость 6</div>
                     </div>
                     <div class="news__container_swiper_slide_descr">В апреле в Перми НьюТек Сервисез запустило один из первых заводов в России по производству набухающих пакеров – надежного, безопасного и</div>
                 </div>
@@ -314,18 +328,18 @@
     </section>
 
     <section class="feedback">
-        <form class="feedback__form" novalidate>
+        <form action="#" class="feedback__form" novalidate>
             <div class="container">
                 <h2 class="feedback__form_title">Request More Information</h2>
                 <div class="form-row">
                     <div class="feedback__form_item col-12 form-group">
-                        <input type="text" maxlength="100" class="feedback__form_item_style" id="formGroupExampleInput" placeholder="Name" required>
+                        <input type="text" maxlength="100" class="feedback__form_item_style" name="form-name" id="form-name" placeholder="Name" required>
                     </div>
                     <div class="feedback__form_item col-6 mb-6 form-group">
-                        <input type="text" maxlength="100" class="feedback__form_item_style" id="formGroupExampleInput" placeholder="Company name" required>
+                        <input type="text" maxlength="100" class="feedback__form_item_style" name="form-company" id="form-company" placeholder="Company name" required>
                     </div>
                     <div class="feedback__form_item col-6 mb-6 form-group">
-                    <select class="feedback__form_item_style_business" id="exampleFormControlSelect1" required>
+                    <select class="feedback__form_item_style_business" name="form-business" id="form-business" required>
                         <option selected disabled value="">Business Segment</option>
                         <option>Business 1</option>
                         <option>Business 2</option>
@@ -335,23 +349,27 @@
                     </select>
                     </div>
                     <div class="feedback__form_item col-6 mb-6 form-group has-error">
-                        <input type="email" maxlength="100" class="feedback__form_item_style" id="exampleFormControlInput1" placeholder="Email" required>
+                        <input type="email" maxlength="100" class="feedback__form_item_style" name="form-email" id="form-email" placeholder="Email" required>
                     </div>
                     <div class="feedback__form_item col-6 mb-6 form-group">
-                        <input type="number" maxlength="20" class="feedback__form_item_style_phone" id="phone" aria-live="polite" placeholder="Phone" required>
+                        <input type="number" maxlength="20" class="feedback__form_item_style_phone" name="form-phone" id="form-phone" aria-live="polite" placeholder="Phone" required>
                         <div class="feedback__form_item_style_phone_invalid_text invalid-feedback">
                             Это поле обязательно для заполнения
                         </div>
                     </div>
                     <div class="feedback__form_item_comment col-12 form-group">
-                        <textarea type="text" class="feedback__form_item_style_comment" id="formGroupExampleInput" placeholder="Comment"></textarea>
+                        <textarea type="text" class="feedback__form_item_style_comment" name="form-comment" id="form-comment" placeholder="Comment"></textarea>
                     </div>
                     <div class="feedback__form_item_check col-6 mb-6 form-group">
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="feedback__form_item_check_input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1">I give consent for my personal data to be processed</label>
+                            <input type="checkbox" class="feedback__form_item_check_input" name="form-checkbox" id="form-checkbox" required>
+                            <label class="custom-control-label" for="form-checkbox">I give consent for my personal data to be processed</label>
+                            <div class=" invalid-feedback">
+                                You must agree before submitting
+                            </div>
                         </div>
                     </div>
+                    
                     <div class="feedback__form_item_btn col-6 mb-6 form-group">
                         <button type="submit" class="btn feedback__form_item_btn_button">Send</button>
                     </div>
@@ -407,8 +425,10 @@
             </div>
         </div>
     </section>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?load=Geolink&amp;lang=ru_RU&amp;apikey=<f9631021-35f0-4876-b831-e6dca08d0d83>" type="text/javascript"></script> -->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<f9631021-35f0-4876-b831-e6dca08d0d83>" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
